@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./style.css" rel="stylesheet">
+  <script defer src="./script.js"></script>
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+  <div id="background">
+    <h3>Mortgage Calculator</h3>
+    <p id="clearBtn"><a href="#">Clear all</a></p>
+    
+    <div class="input-container">
+      <label id="amountLabel">Mortgage Amount</label>
+      <div id="currency-symbol"><p>€</p></div>
+      <input id="amountInput" class="textInput" type="number">
+      <p id="errorMessage">This field is required</p>
+    </div>
+
+    <div class="input---container">
+      <label id="termLabel">Mortgage Term</label>
+      <div id="years-symbol"><p>years</p></div>
+      <input id="yearsInput" class="textInput" type="number">
+      <p id="errorMessage">This field is required</p>
+    </div>
+
+    <div class="input--container">
+      <label id="rateLabel">Interest Rate</label>
+      <div id="percentage-symbol"><p>%</p></div>
+      <input id="rateInput" class="textInput" type="number">
+      <p id="errorMessage">This field is required</p>
+    </div>
+
+    <div class="input----container">
+      <label id="typeLabel">Mortgage Type</label>
+      <label id="repaymentLabel"><input id="typeInput" type="radio">
+      Repayment</label>
+    </div>
+
+    <div class="input-----container">
+      <label id="interestLabel"><input id="interestInput" type="radio">
+      Interest Only</label>
+    </div>
+    <p id="errorMessage" style="margin-top: 52%; margin-left: 5%;">This field is required</p>
+
+    <button id="calculateBtn"><img width="19" height="19" src="assets/images/icon-calculator.svg"> <p>Calculate Payments</p></button>
+
+    <div id="resultCanvas">
+
+      <div id="coverVision">
+        <img id="illustrationImg" width="192" height="192" src="assets/images/illustration-empty.svg">
+        <h3>Results shown here</h3>
+        <p>Complete the form and click “calculate repayments” to see what 
+          your monthly repayments would be.</p>
+      </div>
+
+      <div id="resultVision">
+        <h3>Your results</h3>
+        <p id="resultDesc">Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
+        <div id="paymentCanvas">
+          <p style="margin-right: 40%; margin-top: 1%;">Your monthly payments</p>
+          <h1 id="monthlyPayment">€1.749,54,32</h1>
+
+          <hr style="border-color: hsl(30, 18%, 87%); width: 90%; position: absolute; margin-top: 35%;">
+
+          <p id="totalPay">Total you'll repay over the term</p>
+          <p id="totalPayVal" style="font-size: 1.5em; color: white; font-weight: 700;">€1.749,54,32</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Subhan Atakishiyev</a>.
+  </div>
+</body>
+</html>

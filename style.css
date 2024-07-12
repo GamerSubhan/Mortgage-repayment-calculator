@@ -1,0 +1,453 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 5%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body
+{
+    background-color:  hsl(202, 86%, 94%);
+}
+
+#background
+{
+    width: 800px;
+    height: 500px;
+    border-radius: 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 7%;
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url("assets/fonts/static/PlusJakartaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: variableFont;
+    src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+h3
+{
+    color:  hsl(202, 55%, 16%);
+    font-family: boldFont;
+    position: absolute;
+    margin-left: 5%;
+}
+
+#clearBtn
+{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 42%;
+    color: hsl(200, 24%, 40%);
+}
+
+a:hover
+{
+    color: hsl(202, 56%, 11%);
+}
+
+a:visited
+{
+    color: hsl(200, 24%, 40%);
+}
+
+#amountInput {
+    padding-left: 35px;
+    box-sizing: border-box;
+    height: 5vh;
+    width: 22vw;
+}
+
+.input-container
+{
+    position: absolute;
+    display: inline-block;
+    margin-top: 13%;
+    margin-left: 5%;
+}
+
+#amountLabel
+{
+    position: absolute;
+    margin-top: -10%;
+    font-family: variableFont;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: hsl(200, 24%, 40%);
+}
+
+#currency-symbol {
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: hsl(202, 86%, 94%);
+    width: 2vw;
+    height: 4.8vh;
+    text-align: center;
+    font-family: boldFont;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 0.9em;
+}
+
+#currency-symbol p
+{
+    margin-top: 30%;
+    color:  hsl(200, 24%, 40%);
+}
+
+.input--container
+{
+    position: absolute;
+    display: inline-block;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+
+#rateInput {
+    box-sizing: border-box;
+    height: 5vh;
+    width: 10vw;
+}
+
+#rateLabel
+{
+    position: absolute;
+    margin-top: -15%;
+    font-family: variableFont;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: hsl(200, 24%, 40%);
+}
+
+#percentage-symbol {
+    position: absolute;
+    left: 79.5%;
+    top: 51%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: hsl(202, 86%, 94%);
+    width: 2vw;
+    height: 4.8vh;
+    text-align: center;
+    font-family: boldFont;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 0.9em;
+}
+
+#percentage-symbol p
+{
+    margin-top: 30%;
+    color:  hsl(200, 24%, 40%);
+}
+
+.input---container
+{
+    position: absolute;
+    display: inline-block;
+    margin-top: 25%;
+    margin-left: 5%;
+}
+
+#yearsInput {
+    box-sizing: border-box;
+    height: 5vh;
+    width: 10vw;
+}
+
+#termLabel
+{
+    position: absolute;
+    margin-top: -15%;
+    font-family: variableFont;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: hsl(200, 24%, 40%);
+}
+
+#years-symbol {
+    position: absolute;
+    left: 69.5%;
+    top: 51%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: hsl(202, 86%, 94%);
+    width: 3vw;
+    height: 4.8vh;
+    text-align: center;
+    font-family: boldFont;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 0.9em;
+}
+
+#years-symbol p
+{
+    margin-top: 15%;
+    color:  hsl(200, 24%, 40%);
+}
+
+input
+{
+    border-top: 1px solid  hsl(200, 24%, 40%);
+    border-left: 1px solid hsl(200, 24%, 40%);
+    border-right: 1px solid hsl(200, 24%, 40%);
+    border-bottom: 1px solid hsl(200, 24%, 40%);
+    border-radius: 5px;
+}
+
+input:hover
+{
+    border-top: 2px solid  hsl(200, 24%, 40%);
+    border-left: 2px solid hsl(200, 24%, 40%);
+    border-right: 2px solid hsl(200, 24%, 40%);
+    border-bottom: 2px solid hsl(200, 24%, 40%);
+}
+
+.input----container
+{
+    position: absolute;
+    display: inline-block;
+    margin-top: 39%;
+    margin-left: 5%;
+    border: 1px solid hsl(200, 24%, 40%);
+    width: 22vw;
+    height: 5vh;
+    border-radius: 6px;
+}
+
+.input----container:hover
+{
+    border-color: hsl(61, 70%, 52%);
+}
+
+#typeLabel
+{
+    position: absolute;
+    margin-top: -10%;
+    color: hsl(200, 24%, 40%);
+    font-family: variableFont;
+    font-weight: 500;
+}
+
+#repaymentLabel
+{
+    margin-top: 2.5%;
+    position: absolute;
+    margin-left: 17%;
+    color: hsl(200, 24%, 40%);
+    font-family: boldFont;
+    font-weight: 500;
+}
+
+#typeInput
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid hsl(202, 55%, 16%);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: -50%;
+}
+
+#typeInput:checked
+{
+    border: 3.5px solid white;
+    background-color: hsl(61, 70%, 52%);
+    width: 18px;
+    height: 17.6px;
+
+}
+
+.input-----container
+{
+    position: absolute;
+    display: inline-block;
+    margin-top: 46%;
+    margin-left: 5%;
+    border: 1px solid hsl(200, 24%, 40%);
+    width: 22vw;
+    height: 5vh;
+    border-radius: 6px;
+}
+
+.input-----container:hover
+{
+    border-color: hsl(61, 70%, 52%);
+}
+
+#interestLabel
+{
+    margin-top: 2.5%;
+    position: absolute;
+    margin-left: 17%;
+    color: hsl(200, 24%, 40%);
+    font-family: boldFont;
+    font-weight: 500;
+}
+
+#interestInput
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid hsl(202, 55%, 16%);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -45%;
+}
+
+#interestInput:checked
+{
+    border: 3.5px solid white;
+    background-color: hsl(61, 70%, 52%);
+    width: 18px;
+    height: 17.6px;
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url("assets/fonts/static/PlusJakartaSans-Bold.ttf");
+}
+
+#calculateBtn
+{
+    font-family: boldFont;
+    background-color: hsl(61, 70%, 52%);
+    font-size: 1em;
+    color: hsl(202, 55%, 16%);
+    border: none;
+    border-radius: 18px;
+    width: 16vw;
+    height: 5.5vh;
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#calculateBtn:hover
+{
+    background-color: hsla(61, 70%, 52%, 0.55);
+}
+
+#calculateBtn img{
+    margin-right: 70%;
+    margin-top: 4%;
+}
+
+#calculateBtn p{
+    margin-top: -10%;
+    margin-left: 14%;
+}
+
+#resultCanvas
+{
+    width: 380px;
+    height: 500px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 64px;
+    background-color: hsl(202, 55%, 16%);
+    margin-left: 55%;
+    text-align: center;
+}
+
+#illustrationImg
+{
+    margin-top: 30%;
+}
+
+#resultCanvas h3{
+    position: relative;
+    font-size: 1.1em;
+    font-family: boldFont;
+    color: white;
+}
+
+#resultCanvas p
+{
+    font-family: variableFont;
+    color: hsl(202, 86%, 94%);
+    font-size: 0.9em;
+    transform: scale(0.9);
+}
+
+#resultVision
+{
+    position: absolute;
+    display: none;
+}
+
+#coverVision
+{
+    display: block;
+}
+
+#resultVision h3
+{
+    position: absolute;
+    margin-top: 10%;
+}
+
+
+#resultVision p{
+    margin-top: 25%;
+}
+
+#paymentCanvas
+{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 320px;
+    height: 220px;
+    background-color: hsl(201, 56%, 11%);
+    border-radius: 11px;
+    border-top: 3px solid hsl(61, 70%, 52%);
+}
+
+#monthlyPayment
+{
+    position: absolute;
+    color: hsl(61, 70%, 52%);
+    font-family: variableFont;
+    margin-top: 13%;
+}
+
+#totalPay
+{
+    position: absolute;
+    padding-top: 18%;
+    margin-right: 30%;
+}
+
+
+#totalPayVal
+{
+    position: absolute;
+    padding-top: 27%;
+    margin-right: 42%;
+}
+
+#errorMessage
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: red;
+    display: none;
+}
